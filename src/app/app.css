@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.btn-language-active {
+  background-color: #291334;
+  border-color: #291334;
+  color: #fff;
+
+}
