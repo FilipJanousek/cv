@@ -12,19 +12,22 @@ export class App {
   protected readonly selectedLanguage = signal<LanguageCode>('cs');
   protected readonly content = {
     en: {
-      name: 'Filip Janoušek',
+      texts: {
+        contact: 'Contact',
+        languages: 'Languages',
+        skills: 'Skills',
+      },
       titles: ['Software Engineer', 'Software Architect'],
       sections: [
         {'title': 'About me', 'paragraphs': [
-          'I am an <strong>ICT professional</strong> with <strong>more than 15 years of experience</strong> across <strong>technology solutions</strong>, <strong>web technologies</strong> and <strong>system administration</strong>. Over the last approximately <strong>8 years</strong>, my work has increasingly focused on <strong>software development</strong>, <strong>application design</strong> and <strong>automation</strong>. Before becoming a <strong>freelancer in 2020</strong>, I gained broad technical experience as an <strong>IT administrator</strong>, <strong>webmaster</strong> and <strong>junior frontend developer</strong>. Since 2020, I have been helping clients <strong>design</strong>, <strong>build</strong>, <strong>automate</strong> and <strong>improve their digital systems</strong>.',
-          'I primarily work with <strong>PHP</strong>, <strong>JavaScript</strong>, <strong>Python</strong> and <strong>related frameworks</strong>. Besides <strong>traditional software development</strong>, I also have experience with <strong>OutSystems ODC</strong>, one of the most advanced <strong>low-code platforms</strong> currently available.',
-          'My long-term experience in the ICT field has taught me how to quickly understand different business domains, adapt to new technologies, and deliver practical solutions tailored to each project\'s needs.',
-          'My work focuses mainly on <strong>web application development</strong>, <strong>process automation</strong>, <strong>technical solution design</strong>, and implementation across various types of projects. I have provided ICT services to a range of companies, including <strong>Škoda Auto</strong>, <strong>Alove</strong>, <strong>ArtMaster</strong>, <strong>Defend Insurance</strong>, and others.'
+          'I have been working professionally in ICT for more than 15 years. I started as an IT administrator, webmaster, and junior frontend developer, gradually moving into full stack development. In recent years, I have increasingly focused on software architecture design and technical solution design.',
+          'Since 2020, I have been working as a freelancer and cooperating with my clients fully remotely. In my work, I try to use AI in an AI-assisted development mode - as a tool to support development, analysis, and solution design. At the same time, I always consider where AI implementation truly makes sense and where it does not bring real value.',
+          'My long-term experience in the field has taught me to adapt quickly to new technologies and deliver practical solutions tailored to the needs of each specific project. I have provided my services to a wide range of clients, including Škoda Auto, Alove, Defend Insurance, and others.'
         ]},
         {'title': 'What I can offer', 'paragraphs': [
-          '<strong>I offer clients</strong> a <strong>flexible and direct form of cooperation</strong> based on <strong>practical technical experience</strong>, <strong>fast communication</strong> and the ability to <strong>work independently</strong>. As a <strong>freelancer</strong>, I can often <strong>adapt faster than larger teams</strong> and provide support in situations where <strong>flexibility</strong>, <strong>focus</strong> and <strong>clear ownership</strong> are important.',
-  'When needed, I can work <strong>outside standard business hours</strong>, including <strong>evenings</strong>, <strong>weekends</strong> or <strong>holidays</strong>. This can be helpful for <strong>urgent tasks</strong>, <strong>deployments</strong>, <strong>maintenance windows</strong> or <strong>focused work</strong> that should not interrupt regular business operations. This type of availability is always based on <strong>mutual agreement</strong>, <strong>project priorities</strong> and <strong>agreed cooperation terms</strong>.',
-  'I combine experience in <strong>software development</strong>, <strong>system administration</strong>, <strong>web technologies</strong>, <strong>automation</strong>, <strong>documentation</strong> and <strong>solution design</strong>. Thanks to this, I can help clients not only with <strong>writing code</strong>, but also with <strong>understanding the problem</strong>, <strong>proposing a practical solution</strong>, <strong>improving existing systems</strong> and <strong>documenting important processes</strong>.'
+          'I offer clients flexible and direct cooperation based on practical technical experience, fast communication, and the ability to complete tasks independently. As a freelancer, I can often adapt more quickly than larger teams and provide support especially in situations where flexibility, focus, and clear responsibility for the result are important.',
+          'When needed, I can also work outside standard business hours, including evenings, weekends, or public holidays. This can be useful for urgent tasks, production deployments, maintenance windows, or focused work that should not disrupt the company’s normal operations. This type of availability is always based on mutual agreement, project priorities, and agreed cooperation terms.',
+          'I combine experience in software development, system administration, web technologies, automation, documentation, and technical solution design. This allows me to help clients not only with development itself, but also with problem analysis, practical solution design, improvement of existing systems, and clear documentation of important processes.'
         ]},
       ],
       languages: ['Czech - native speaker', 'English - intermediate'],
@@ -36,24 +39,27 @@ export class App {
       ]
     },
     cs: {
-      name: 'Filip Janoušek',
+      texts: {
+        contact: 'Kontakt',
+        languages: 'Jazyky',
+        skills: 'Dovednosti',
+      },
       titles: ['Software Engineer', 'Software Architect'],
       sections: [
         {
           'title': 'O mně',
           'paragraphs': [
-            'Jsem <strong>ICT profesionál</strong> s <strong>více než 15 lety zkušeností</strong> napříč oblastmi <strong>technologických řešení</strong>, <strong>webových technologií</strong> a <strong>správy systémů</strong>. Během posledních přibližně <strong>8 let</strong> se má práce stále více zaměřuje na <strong>vývoj softwaru</strong>, <strong>návrh aplikací</strong> a <strong>automatizaci</strong>. Než jsem se v roce <strong>2020 stal freelancerem</strong>, získal jsem široké technické zkušenosti jako <strong>IT administrátor</strong>, <strong>webmaster</strong> a <strong>junior frontend developer</strong>. Od roku 2020 pomáhám klientům <strong>navrhovat</strong>, <strong>vytvářet</strong>, <strong>automatizovat</strong> a <strong>zlepšovat jejich digitální systémy</strong>.',
-            'Primárně pracuji s technologiemi <strong>PHP</strong>, <strong>JavaScript</strong>, <strong>Python</strong> a <strong>souvisejícími frameworky</strong>. Kromě <strong>tradičního vývoje softwaru</strong> mám také zkušenosti s platformou <strong>OutSystems ODC</strong>, jednou z nejpokročilejších <strong>low-code platforem</strong> současnosti.',
-            'Moje dlouhodobé zkušenosti v oblasti ICT mě naučily rychle porozumět různým obchodním oblastem, přizpůsobit se novým technologiím a dodávat praktická řešení přizpůsobená potřebám konkrétního projektu.',
-            'Má práce se zaměřuje především na <strong>vývoj webových aplikací</strong>, <strong>automatizaci procesů</strong>, <strong>návrh technických řešení</strong> a implementaci napříč různými typy projektů. ICT služby jsem poskytoval celé řadě společností, mezi které patří například <strong>Škoda Auto</strong>, <strong>Alove</strong>, <strong>ArtMaster</strong>, <strong>Defend Insurance</strong> a další.'
+            'V ICT se profesně pohybuji více než 15 let. Začínal jsem jako IT administrátor, webmaster a junior frontend developer, postupně jsem se posunul k full stack vývoji a v posledních letech se stále více zaměřuji na návrh softwarové architektury a technických řešení.',
+            'Od roku 2020 působím jako freelancer a se svými klienty spolupracuji výhradně na dálku. Při práci se snažím využívat AI v režimu AI-assisted development, tedy jako nástroj pro podporu vývoje, analýzy a návrhu řešení. Zároveň vždy přemýšlím nad tím, kde má implementace AI skutečný smysl a kde naopak nepřináší reálnou hodnotu.',
+            'Dlouhodobé zkušenosti v oboru mě naučily rychle se přizpůsobit novým technologiím a dodávat praktická řešení přizpůsobená potřebám konkrétního projektu. Své služby jsem poskytoval již celé řadě klientů, mezi které patří například Škoda Auto, Alove, Defend Insurance a další.'
           ]
         },
         {
           'title': 'Co mohu nabídnout',
           'paragraphs': [
-            '<strong>Klientům nabízím</strong> <strong>flexibilní a přímou formu spolupráce</strong> založenou na <strong>praktických technických zkušenostech</strong>, <strong>rychlé komunikaci</strong> a schopnosti <strong>pracovat samostatně</strong>. Jako <strong>freelancer</strong> se často dokážu <strong>přizpůsobit rychleji než větší týmy</strong> a poskytnout podporu v situacích, kde jsou důležité <strong>flexibilita</strong>, <strong>soustředění</strong> a <strong>jasná odpovědnost za výsledek</strong>.',
-            'V případě potřeby mohu pracovat i <strong>mimo standardní pracovní dobu</strong>, včetně <strong>večerů</strong>, <strong>víkendů</strong> nebo <strong>svátků</strong>. To může být užitečné u <strong>urgentních úkolů</strong>, <strong>nasazení do provozu</strong>, <strong>servisních oken</strong> nebo <strong>soustředěné práce</strong>, která by neměla narušit běžný provoz firmy. Tento typ dostupnosti je vždy založen na <strong>vzájemné dohodě</strong>, <strong>prioritách projektu</strong> a <strong>dohodnutých podmínkách spolupráce</strong>.',
-            'Kombinuji zkušenosti z oblastí <strong>vývoje softwaru</strong>, <strong>správy systémů</strong>, <strong>webových technologií</strong>, <strong>automatizace</strong>, <strong>dokumentace</strong> a <strong>návrhu řešení</strong>. Díky tomu mohu klientům pomoci nejen se <strong>psaním kódu</strong>, ale také s <strong>pochopením problému</strong>, <strong>návrhem praktického řešení</strong>, <strong>zlepšováním existujících systémů</strong> a <strong>dokumentací důležitých procesů</strong>.'
+            'Klientům nabízím flexibilní a přímou spolupráci postavenou na praktických technických zkušenostech, rychlé komunikaci a schopnosti samostatně dotahovat věci do konce. Díky freelance formě spolupráce se dokážu často přizpůsobit rychleji než větší týmy a pomoci zejména v situacích, kde je důležitá flexibilita, soustředění a jasná odpovědnost za výsledek.',
+            'V případě potřeby mohu pracovat také mimo standardní pracovní dobu, například večer, o víkendech nebo během svátků. Tato dostupnost může být užitečná u urgentních úkolů, produkčních nasazení, servisních oken nebo u práce, která vyžaduje klid a neměla by narušit běžný provoz firmy. Vždy se však odvíjí od konkrétní dohody, priorit projektu a nastavených podmínek spolupráce.',
+            'Kombinuji zkušenosti z vývoje softwaru, správy systémů, webových technologií, automatizace, dokumentace a návrhu technických řešení. Díky tomu mohu klientům pomoci nejen se samotným vývojem, ale také s analýzou problému, návrhem praktického řešení, zlepšováním existujících systémů a srozumitelnou dokumentací důležitých procesů.'
           ]
         },
       ],
